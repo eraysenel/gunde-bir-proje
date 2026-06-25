@@ -56,7 +56,7 @@
       <p class="slo">Her gün küçük de olsa bir şey üret ve paylaş.</p>
       <p class="man">Ne ürettiğin değil - <b>ürettiğin</b> ve <b>sürdürdüğün</b> önemli. Üretmek bir kastır; her gün çalıştırınca güçlenir. Burada rekabet değil, dayanışma var. Önemli olan tek şey: <b>niyet ve destek.</b></p>
       <a class="cta" href="#katil">Erken erişim için katıl →</a>
-      <div class="big1y"><b>1 yıl = 365 proje.</b> Bir yıl sonra bambaşka biri olursun.</div>
+      <div class="big1y"><b>1 kişi → 365 proje/yıl.</b> 100 kişi → <b>36.500.</b> Ya biz? 🔥</div>
     </div>
   </div>
 
@@ -83,12 +83,36 @@
       <div style="text-align:center"><span class="soon">⏳ Platform hazırlanıyor - önce ilgi topluyoruz</span></div>
     </section>
 
+    <section id="scale">
+      <h2>Birlikte ne kadar büyürüz?</h2>
+      <p class="lead">Kaydır ve gör. Tek başına disiplin; birlikte çığ.</p>
+      <div style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center;box-shadow:0 14px 40px rgba(124,58,237,.08)">
+        <div style="font-size:13px;color:var(--muted)"><span id="pplN" style="font-weight:800;color:var(--p1)">100</span> kişi × 365 gün</div>
+        <div id="bigNum" style="font-size:46px;font-weight:800;color:var(--p1);margin:6px 0;letter-spacing:-1px">36.500</div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:16px">proje / yıl 🤯</div>
+        <input id="ppl" type="range" min="1" max="1000" value="100" style="width:100%;accent-color:var(--p2)">
+        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:4px"><span>1 kişi</span><span>1000 kişi</span></div>
+        <div id="dots" style="margin-top:16px;font-size:15px;line-height:1.5;word-break:break-word;min-height:24px"></div>
+      </div>
+    </section>
+    <script>
+      (function(){
+        var ppl=document.getElementById('ppl');
+        function fmtTr(n){return n.toLocaleString('tr-TR')}
+        function animate(el,to){var from=parseInt((el.textContent||'0').replace(/[^0-9]/g,''))||0;var t0=performance.now();function s(t){var p=Math.min((t-t0)/450,1);el.textContent=fmtTr(Math.round(from+(to-from)*p));if(p<1)requestAnimationFrame(s)}requestAnimationFrame(s)}
+        function upd(){var n=+ppl.value;document.getElementById('pplN').textContent=fmtTr(n);animate(document.getElementById('bigNum'),n*365);var shown=Math.min(n,40);document.getElementById('dots').textContent='🧑'.repeat(shown)+(n>40?' …+'+fmtTr(n-40):'')}
+        ppl.addEventListener('input',upd);upd();
+      })();
+    </script>
+
     <section id="katil">
       <h2>Erken erişim listesine katıl</h2>
       <p class="lead">Hazır olduğunda ilk sen haberdar ol. Fikrini de paylaşabilirsin.</p>
       <form id="form">
         <input type="hidden" name="access_key" value="9c4b1595-d475-4f50-a541-cd4021868d4d">
-        <input type="hidden" name="subject" value="Günde Bir Proje - yeni erken erişim kaydı">
+        <input type="hidden" name="subject" value="[GÜNDE BİR PROJE] Yeni erken erişim kaydı">
+        <input type="hidden" name="from_name" value="Günde Bir Proje">
+        <input type="hidden" name="liste" value="Günde Bir Proje - Erken Erişim (gönüllü DEĞİL)">
         <input type="checkbox" name="botcheck" style="display:none">
         <div class="row">
           <div><label>Ad *</label><input name="ad" required placeholder="Adın"></div>
