@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Günde Bir Proje - Her gün bir şey üret</title>
+<meta name="description" content="Her gün küçük de olsa bir şey üret ve paylaş. Önemli olan niyet ve destek. Erken erişim için katıl.">
+<style>
+  :root{--ink:#1a1830;--muted:#6b6b86;--line:#ececf5;--card:#fff;
+    --p1:#7c3aed;--p2:#ec4899;--p3:#f59e0b;--em:#10b981}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#faf9fe}
+  .wrap{max-width:860px;margin:0 auto;padding:0 18px}
+  a{color:var(--p1)}
+  .hero{background:linear-gradient(135deg,var(--p1) 0%,var(--p2) 55%,var(--p3) 110%);color:#fff;text-align:center;padding:58px 0 50px}
+  .hero .wrap{padding:0 18px}
+  .kick{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:700;letter-spacing:.4px}
+  .hero h1{font-size:40px;margin:14px 0 8px;letter-spacing:-.5px}
+  .hero .slo{font-size:17px;color:#fff;opacity:.95;margin:0 auto 10px;max-width:560px}
+  .hero .man{font-size:15px;color:#fff;opacity:.9;margin:0 auto 24px;max-width:600px}
+  .cta{display:inline-block;background:#fff;color:var(--p1);text-decoration:none;font-weight:800;padding:14px 28px;border-radius:14px;font-size:16px;box-shadow:0 10px 30px rgba(124,58,237,.35)}
+  .cta:hover{transform:translateY(-1px)}
+  .big1y{margin-top:22px;font-size:13.5px;color:#fff;opacity:.9}
+  .big1y b{font-size:16px}
+  section{padding:38px 0}
+  h2{font-size:24px;margin:0 0 6px;text-align:center}
+  .lead{color:var(--muted);text-align:center;margin:0 auto 22px;max-width:560px}
+  .rules{display:grid;gap:12px}
+  .rule{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+  .rule .n{flex:0 0 auto;width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--p1),var(--p2))}
+  .rule h3{margin:0 0 2px;font-size:16px}
+  .rule p{margin:0;font-size:14px;color:var(--muted)}
+  .how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center}
+  .step .e{font-size:30px}.step b{display:block;margin:6px 0 3px}.step span{font-size:13px;color:var(--muted)}
+  .soon{display:inline-block;background:#fef3c7;color:#92400e;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700;margin-top:10px}
+  form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 14px 40px rgba(124,58,237,.10)}
+  label{display:block;font-size:13px;font-weight:600;margin:12px 0 5px}
+  input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:11px;font-size:15px;font-family:inherit}
+  textarea{min-height:84px;resize:vertical}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .consent{display:flex;gap:9px;align-items:flex-start;margin-top:14px;font-size:13px;color:var(--muted)}
+  .consent input{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:var(--p1)}
+  button.submit{margin-top:18px;width:100%;border:0;border-radius:14px;padding:15px;font-size:16px;font-weight:800;color:#fff;cursor:pointer;background:linear-gradient(135deg,var(--p1),var(--p2))}
+  button.submit:hover{opacity:.95}
+  #ok{display:none;background:#ecfdf5;border:1px solid #a7f3d0;color:#047857;border-radius:14px;padding:18px;text-align:center;font-weight:700;margin-top:14px}
+  footer{background:#1a1830;color:#c7c7da;text-align:center;padding:26px 18px;font-size:13px}
+  @media(max-width:620px){.hero h1{font-size:30px}.how,.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="wrap">
+      <span class="kick">YENİ BİR HAREKET · YAKINDA</span>
+      <h1>Günde Bir Proje</h1>
+      <p class="slo">Her gün küçük de olsa bir şey üret ve paylaş.</p>
+      <p class="man">Ne ürettiğin değil - <b>ürettiğin</b> ve <b>sürdürdüğün</b> önemli. Üretmek bir kastır; her gün çalıştırınca güçlenir. Burada rekabet değil, dayanışma var. Önemli olan tek şey: <b>niyet ve destek.</b></p>
+      <a class="cta" href="#katil">Erken erişim için katıl →</a>
+      <div class="big1y"><b>1 yıl = 365 proje.</b> Bir yıl sonra bambaşka biri olursun.</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section>
+      <h2>Kurallar (çok basit)</h2>
+      <p class="lead">Karmaşık değil. Tek mantığı: her gün üret, birbirini destekle.</p>
+      <div class="rules">
+        <div class="rule"><div class="n">1</div><div><h3>Her gün bir şey üret ve paylaş</h3><p>Kod, yazı, çizim, video, fikir... ne olursa. Biten bir şey.</p></div></div>
+        <div class="rule"><div class="n">2</div><div><h3>Küçük olması sorun değil</h3><p>Biten iş, mükemmel işten iyidir. Mükemmeli bekleme, paylaş.</p></div></div>
+        <div class="rule"><div class="n">3</div><div><h3>Birbirini destekle</h3><p>Alkışla, yorum yap, geri bildirim ver. İstersen başkasının projesine katıl.</p></div></div>
+        <div class="rule"><div class="n">4</div><div><h3>Rekabet değil, dayanışma</h3><p>Kimse yargılamaz; herkes bir yerden başlar. Niyet ve süreklilik esastır.</p></div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Nasıl işleyecek?</h2>
+      <p class="lead">Platform yapım aşamasında. İşte hedeflenen akış:</p>
+      <div class="how">
+        <div class="step"><div class="e">📝</div><b>Üye ol</b><span>Hesabını aç, profilini oluştur.</span></div>
+        <div class="step"><div class="e">🚀</div><b>Bugün ne ürettin?</b><span>Günlük projeni paylaş; üst üste gün serini (streak) tut.</span></div>
+        <div class="step"><div class="e">🤝</div><b>Destekle & katıl</b><span>Akışta başkalarını gör, alkışla, projelerine katıl.</span></div>
+      </div>
+      <div style="text-align:center"><span class="soon">⏳ Platform hazırlanıyor - önce ilgi topluyoruz</span></div>
+    </section>
+
+    <section id="katil">
+      <h2>Erken erişim listesine katıl</h2>
+      <p class="lead">Hazır olduğunda ilk sen haberdar ol. Fikrini de paylaşabilirsin.</p>
+      <form id="form">
+        <input type="hidden" name="access_key" value="9c4b1595-d475-4f50-a541-cd4021868d4d">
+        <input type="hidden" name="subject" value="Günde Bir Proje - yeni erken erişim kaydı">
+        <input type="checkbox" name="botcheck" style="display:none">
+        <div class="row">
+          <div><label>Ad *</label><input name="ad" required placeholder="Adın"></div>
+          <div><label>E-posta *</label><input type="email" name="email" required placeholder="ornek@eposta.com"></div>
+        </div>
+        <div class="row">
+          <div><label>Genelde ne üretirsin?</label>
+            <select name="uretim">
+              <option>Kod / Yazılım</option><option>Yazı / İçerik</option><option>Tasarım / Görsel</option>
+              <option>Video</option><option>Fikir / Strateji</option><option>Karışık / Diğer</option>
+            </select>
+          </div>
+          <div><label>Bir bağlantı (portföy/sosyal, opsiyonel)</label><input name="link" placeholder="https://..."></div>
+        </div>
+        <label>Neden katılmak istiyorsun? (opsiyonel)</label>
+        <textarea name="mesaj" placeholder="Birkaç cümle yeter."></textarea>
+        <label class="consent"><input type="checkbox" required> E-postamın yalnızca bu topluluk hakkında bilgilendirme için kullanılacağını kabul ediyorum.</label>
+        <button class="submit" type="submit">Listeye katıl</button>
+        <div id="ok">🎉 Listeye eklendin! Platform hazır olduğunda ilk haber sana gelecek.</div>
+        <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:12px">🔒 Bilgilerin üçüncü kişilerle paylaşılmaz.</p>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    Günde Bir Proje · Bir hayalin ilk adımı · © Eray Şenel
+  </footer>
+
+<script>
+  document.getElementById('form').addEventListener('submit', async function(e){
+    e.preventDefault();
+    var f=e.target, btn=f.querySelector('button.submit');
+    btn.disabled=true; btn.textContent='Gönderiliyor...';
+    try{
+      var res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(f)))});
+      var d=await res.json();
+      if(d.success){ f.querySelectorAll('input,select,textarea,button').forEach(function(x){x.style.display='none'}); document.getElementById('ok').style.display='block'; }
+      else{ alert('Gönderilemedi: '+(d.message||'tekrar dene')); btn.disabled=false; btn.textContent='Listeye katıl'; }
+    }catch(err){ alert('Bağlantı hatası: '+err.message); btn.disabled=false; btn.textContent='Listeye katıl'; }
+  });
+</script>
+</body>
+</html>
